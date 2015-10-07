@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+    <head>
+	</head>
+	
+	<body>
+	     <p id = "demo"> this is a parragraph </p>
+		 
+		 <input id = "num" type = "number">
+		 
+		 <button type= "button" onclick="myfunction()"> submit </button>
+		 
+		 <script>
+		 function myfunction(){
+		 var x , text;
+			 x = document.getElementById("num").value;
+		 if (isNaN(x) || x > 10 || x < 1 ){
+			  text = "input not valid";
+			  }
+	     else {
+				 text = "input ok";
+				}
+		 document.getElementById("demo").innerHTML = text;
+		 
+		 }
+		     
+	    </script>
+		
+		
+	</body>
+</html>	

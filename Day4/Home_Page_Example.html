@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table, td, tr {
+				align:center;
+			}
+			table {
+				width: 90%;
+			}
+			td {
+				height: 50px;
+				padding: 5px;
+			}
+			#header {
+				background-color:black;
+				color:white;	
+			}
+
+			#section {
+				width:100%;
+				height:550px;
+				float:left;	 
+				background: url(background.gif) no-repeat center center fixed; 
+				background-size: cover;
+			}
+			
+			#innerdiv {
+				width: 370px;
+				height: 490px;
+				padding: 0px;
+				margin-left: 450px;
+				margin-top: 30px;
+				background: url(signup.gif) no-repeat center center fixed; 
+				background-size: cover;
+			}
+			
+			#footer {
+				background-color:black;
+				height:30px;
+				color:white;
+				clear:both;
+				text-align:center;
+			 	 
+			}
+		</style>
+		<script>
+			function checkData()
+			{
+				var a,b,c,d,e;
+				a=document.getElementById("f").value;
+				b=document.getElementById("e").value;
+				c=document.getElementById("u").value;
+				d=document.getElementById("p").value;
+				e=document.getElementById("c").value;
+				if(a=="" || b=="" || c=="" || d=="" || e=="")
+				{
+					window.alert("Please fill Complete Detail.");
+				} 
+				var uid = c.length;  
+				if (d!=e)  
+				{  
+					alert("Confirm Password must be same");  
+					
+				}		
+			}
+		</script>
+	</head>
+		
+	<body>
+
+		<div id="header">
+			<img src="tudip.png" alt="HTML5 Icon" style="width:125px;height:60px;"> 
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			
+			UserId  &nbsp <input type="text">
+			Password &nbsp <input type="password">
+			<input type="submit" value="Login">
+		</div>
+
+		<div id="section">
+			<div id="innerdiv">
+				<form>
+				<table>
+					<tr>
+						<td>Name</td>
+						<td><input tpye="text" id="f" pattern="[A-Za-z]{6,20}" title="six to Twenty letter Name"></td>
+					</tr>
+					<tr>
+						<td>Email id</td>
+						<td><input tpye="email" id="e" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td>
+					</tr>
+					<tr>
+						<td>User id</td>
+						<td><input tpye="text" id="u" pattern="[A-Za-z0-1].{6,20}" title="Six to Twenty letter Name"></td>
+					</tr>
+					<tr>
+						<td>password</td>
+						<td><input tpye="password" id="p" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
+					</tr>
+					<tr>
+						<td>Confirm password</td>
+						<td><input tpye="password" id="c"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="SignUp" onClick="checkData()"></td>
+					</tr>
+				</table>
+			</form>
+			</div>
+		</div>
+
+		<div id="footer">
+			Copyright © rahul.sharma@tudip.com
+		</div>
+
+	</body>
+</html>

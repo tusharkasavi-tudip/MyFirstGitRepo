@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			a:link {
+   		 		color:#000000;
+    				background-color:transparent;
+    				text-decoration:none;
+			}
+			a:visited {
+    				color:#000000;
+    				background-color:transparent;
+    				text-decoration:none;
+			}
+			a:hover {
+    				color:#ff0000;
+    				background-color:transparent;
+    				text-decoration:underline;
+			}
+			a:active {
+    				color:#ff0000;
+    				background-color:transparent;
+    				text-decoration:underline;
+			}
+			body {
+				background-color:lightgray
+			}
+			h1.error   {
+  			  	color:blue;
+    				font-family:verdana;
+    				font-size:300%;
+			}
+			p#p01    {
+				color:red;
+    				font-family:courier;
+    				font-size:160%;
+				border:1px solid black;
+				padding:10px;
+				margin:30px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<p>Use id to address single elements. Use class to address groups of elements.</p>
+		<h1 class="error">This is a heading</h1>
+		<p id="p01">This is a paragraph.</p>
+
+		<p>You can change the default colors of links</p>
+		<a href="tag.html" target="_blank">Tags</a> 
+		    <!--	_blank :-	Opens the linked document in a new window or tab                                     -->
+		    <!--	_self :-	Opens the linked document in the same frame as it was clicked (this is default)	     -->
+		    <!--	_parent :-	Opens the linked document in the parent frame					     -->
+		    <!--	_top :- 	Opens the linked document in the full body of the window			     -->
+		    <!--	framename :-	Opens the linked document in a named frame					     -->
+		    <!--	If your webpage is locked in a frame, you can use target="_top" to break out of the frame:	     -->
+		
+		<a href="tag.html">
+  			<img src="java.jpg" alt="HTML tutorial" style="float:right;width:42px;height:42px;border:0"></br>
+			<img src="java.jpg" alt="HTML tutorial" width="128" height="128">
+		</a>	
+
+		<h2 id="tips">Useful Tips Section</h2>
+		<a href="#tips">Visit the Useful Tips Section</a>
+		<a href="html_tips.htm#tips">Visit the Useful Tips Section</a>
+	
+	</body>
+</html>

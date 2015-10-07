@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul#menu li {
+    display:inline;
+}
+ul#menu1 {
+    padding: 0;
+}
+
+ul#menu1 li {
+    display: inline;
+}
+ul#menu1 li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu1 li a:hover {
+    background-color: orange;
+}
+</style>
+</head>
+<body>
+
+<h2>Unordered List</h2>
+
+<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<!-- list-style-type:disc	The list items will be marked with bullets (default)
+list-style-type:circle	The list items will be marked with circles
+list-style-type:square	The list items will be marked with squares
+list-style-type:none	The list items will not be marked -->
+
+
+<h2>ordered List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!-- type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers -->
+
+<h2> HTML Description List </h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2> Nested List </h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<h2> Horizental List </h2>
+
+<ul id="menu">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>PHP</li>
+</ul> 
+
+<h2> Horizental List Look like a Menu </h2>
+
+<ul id="menu1">
+  <li><a href="/html/default.asp">HTML</a></li>
+  <li><a href="/css/default.asp">CSS</a></li>
+  <li><a href="/js/default.asp">JavaScript</a></li>
+  <li><a href="/php/default.asp">PHP</a></li>
+</ul>  
+
+
+</body>
+</html>

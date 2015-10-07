@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+    <head>
+	</head>
+	
+	<body>
+	    <p>
+my automatic global scope
+</p>
+
+<p id="demo"></p>
+
+<script>
+myFunction();
+document.getElementById("demo").innerHTML =
+"I can display " + carName;
+
+function myFunction() {
+    carName = "Volvo";
+}
+</script>
+		
+	</body>
+</html>	
